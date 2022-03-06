@@ -1,0 +1,277 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+main {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  text-align: right;
+}
+
+header a {
+  margin-right: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  font-size: 20px;
+  padding: 3px 6px;
+}
+
+header a:hover {
+  background-color: rgb(73, 163, 239);
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+#welcome form {
+  margin-top: 20px;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(32, 32, 32, 0.7);
+  border-radius: 10px;
+  border: 1px solid rgba(32, 32, 32, 0.1);
+}
+
+#welcome form input {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: black;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: white;
+  width: 90%;
+}
+
+#welcome form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.submit {
+  all: unset;
+  width: 90% !important;
+  border-radius: 5px;
+  padding: 12px 20px;
+  background-color: white !important;
+  color: black !important;
+  text-align: center !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  display: block !important;
+  margin-top: 25px !important;
+  border: none;
+}
+
+#chat input[type="submit"]:focus {
+  outline: none;
+}
+
+#chat input[type="submit"]:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#welcome form ul {
+  all: unset;
+  display: block;
+  margin-top: 30px;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+#welcome form ul li {
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 15px 0px;
+  padding: 7px 0px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+#welcome form ul li:hover {
+  cursor: pointer;
+  background-color: rgb(70, 72, 73);
+}
+
+#welcome form h3 {
+  text-align: center;
+  display: block;
+  margin-top: 35px;
+}
+
+#room {
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: right;
+}
+
+#room label {
+  margin-right: 15px;
+}
+
+#room h3 {
+  text-align: right;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+#room ul {
+  border: 1px solid white;
+  margin: 0 auto;
+  width: 80%;
+  min-height: 300px;
+  max-height: 300px;
+  margin-bottom: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 10px 20px;
+}
+
+#forms {
+  position: relative;
+  margin-top: 30px;
+  text-align: right;
+}
+
+#room #name {
+  width: auto;
+  display: inline-block;
+  text-align: right;
+  margin-right: 15px;
+  margin-bottom: 30px !important;
+}
+
+#room #name input[type="text"] {
+  text-align: center;
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  max-width: 120px;
+  min-width: 70px;
+  width: auto;
+}
+
+#room #name input[type="submit"] {
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: white;
+  width: auto;
+  background-color: rgb(32, 32, 32);
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+
+#room #name input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+#message {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 15px;
+}
+
+#message input[type="text"] {
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  min-width: 300px;
+}
+
+#room #message input[type="submit"] {
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: white;
+  width: auto;
+  background-color: rgb(32, 32, 32);
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+
+#room #message input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(6, 199, 85);
+  color: black;
+}
+
+.myMsg {
+  padding: 3px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 60%;
+  border-radius: 10px;
+  border: 1px solid rgb(6, 199, 85);
+  background-color: rgb(6, 199, 85);
+  text-align: left;
+  font-size: 1.2em;
+  min-width: 250px;
+  max-width: 300px;
+  word-wrap: break-word; /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap; /* current browsers */
+}
+
+.info {
+  padding: 3px 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(73, 163, 239);
+  background-color: rgb(73, 163, 239);
+  max-width: 250px;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.receivedMsg {
+  padding: 3px 5px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(70, 72, 73);
+  background-color: rgb(70, 72, 73);
+  max-width: 250px;
+  color: white;
+  text-align: left;
+  font-size: 1.2em;
+  word-wrap: break-word; /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap; /* current browsers */
+}

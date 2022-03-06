@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="/public/css/base.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+        title Chat Line / Zoom
+    body  
+        main 
+            h1#h1 LINE CHAT
+            div#chat
+                div#welcome 
+                    form#chatForm
+                        input#roomName(type="text", placeholder="Room Name", required)
+                        input#name(type="text", placeholder="Nickname", required)
+                        input.submit(type="submit", value="Enter Room") 
+                        h3 Room List
+                        ul#chatRoomUl
+                div#room
+                    h3
+                    label(for="nickname") Change Nickname
+                    form#name
+                            input(placeholder="Nickname" required, type="text", id="nickname") 
+                            input(type="submit", value="Change")   
+                    div#messages
+                        ul
+                    div#forms
+                        form#message
+                            input(type="text", placeholder="Message", required)
+                            input(type="submit", value="Send")  
+        script(src="/socket.io/socket.io.js")        
+        script(src="/public/js/app.js")
+        script(src="/public/js/forStyle.js")
+
+        
+        
+
+
+
+
