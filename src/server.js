@@ -4,6 +4,7 @@ import http from "http";
 import { Server } from "socket.io";
 import { instrument } from "@socket.io/admin-ui";
 
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.set("view engine", "pug");
@@ -14,7 +15,7 @@ app.get("/", (_, res) => res.render("home"));
 app.get("/*", (_, res) => res.redirect("/"));
 
 const handleListen = () =>
-  console.log(`✅ Listening on https://localhost:3000 🚀`);
+  console.log(`✅ Listening on https://localhost:${PORT} 🚀`);
 
 const httpServer = http.createServer(app);
 
@@ -123,4 +124,4 @@ wss.on("connection", (socket) => {
 });
 */
 
-httpServer.listen(3000, handleListen);
+httpServer.listen(PORT, handleListen);
