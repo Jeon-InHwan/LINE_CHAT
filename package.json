@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Zoom Clone using Node.JS, WebRTC and Websockets",
   "scripts": {
-    "start": "nodemon"
+    "build": "babel src -d build",
+    "start": "node build/server.js"
   },
   "author": "zenstacker",
   "license": "MIT",
