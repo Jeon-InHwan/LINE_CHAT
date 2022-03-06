@@ -1,3 +1,3 @@
-# Zoom
+# LINE_CHAT
 
-Zoom Clone using Node.JS, WebRTC and Websockets.
+LINE_CHAT using Node.JS and SocketIO.
